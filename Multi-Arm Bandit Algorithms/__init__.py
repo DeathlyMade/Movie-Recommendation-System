@@ -1,1 +1,1 @@
-from .JITImplementations import ABTestReplayer, EpsilonGreedyReplayer, ThompsonSamplingReplayer, UCBReplayer, GradientBanditReplayer, LinUCBReplayer
+from .replayers import ABTestReplayer, EpsilonGreedyReplayer, ThompsonSamplingReplayer, UCBReplayer, GradientBanditReplayer, LinUCBReplayer
