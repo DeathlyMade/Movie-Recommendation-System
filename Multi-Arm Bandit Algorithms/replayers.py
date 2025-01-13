@@ -220,7 +220,6 @@ class LinUCBReplayer(ReplaySimulator):
         self.b = [np.zeros(self.n_features) for _ in range(0, self.n_items)]
     
     def select_item(self, visit):
-        print(visit)
         theta = [np.matmul(np.linalg.inv(self.A[item_idx]), self.b[item_idx]) for item_idx in range(0, self.n_items)]
         p = [np.matmul(np.array(theta[item_idx]).T, np.array(self.features[item_idx])) + self.alpha * np.sqrt(np.matmul(np.matmul(np.array(self.features[item_idx]).T, np.linalg.inv(self.A[item_idx])), np.array(self.features[item_idx]))) for item_idx in range(0, self.n_items)]
         
