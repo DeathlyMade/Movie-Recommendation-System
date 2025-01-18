@@ -102,17 +102,17 @@ Reinforcement learning (RL) is used to dynamically optimize movie recommendation
 Rewards are assigned when user ratings exceed a set threshold (e.g., 3/5). Algorithms adapt over time to prioritize movies yielding higher rewards.
 
 ### Results
-- **Thompson Sampling** excels in balancing exploration and exploitation.
+- **Gradient Bandits, and Thompson Sampling** excel in balancing exploration and exploitation.
 - Visualizations show cumulative rewards, highlighting algorithm performance over time.
 
 ### Performance Visualization
 The accompanying graph illustrates the **total reward at Visit 20,000** for different bandit algorithms:
 
-- **Thompson Sampling** achieves the highest cumulative rewards, demonstrating its effectiveness.
-- **Gradient Bandit** shows the lowest reward performance, indicating room for improvement.
-- Static strategies like **A/B Testing** underperform compared to adaptive algorithms, showcasing the importance of reinforcement learning in dynamic environments.
+- **Gradient Bandits** achieves the highest cumulative rewards, followed by **Thompson Sampling**, demonstrating their effectiveness.
+- **A/B test with 1K** and **LinearUCB** perform the worst on this dataset.
+- The results for **UCB**, **Epsilon greedy with 0.10**, **Epsilon greedy with 0.05**, and **A/B testing with 5K** lie in between the best and the worst performances recorded, in this dataset.
 
-This visualization emphasizes how algorithms such as LinUCB and Thompson Sampling adaptively optimize recommendations, ensuring they align with evolving user preferences.
+This visualization emphasizes how algorithms such as Gradient Bandits and Thompson Sampling adaptively optimize recommendations, ensuring they align with evolving user preferences.
 
 Reinforcement learning ensures adaptive, personalized recommendations as user preferences evolve.
 
