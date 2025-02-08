@@ -109,7 +109,7 @@ Rewards are assigned when user ratings exceed a set threshold (e.g., 3/5). Algor
 The accompanying graph illustrates the **total reward at Visit 20,000** for different bandit algorithms:
 
 - **Gradient Bandits** achieves the highest cumulative rewards, followed by **Thompson Sampling**, demonstrating their effectiveness.
-- **A/B test with 1K** and **LinearUCB** perform the worst on this dataset.
+- **A/B test with 1K** and **LinUCB** perform the worst on this dataset.
 - The results for **UCB**, **Epsilon greedy with 0.10**, **Epsilon greedy with 0.05**, and **A/B testing with 5K** lie in between the best and the worst performances recorded, in this dataset.
 
 This visualization emphasizes how algorithms such as Gradient Bandits and Thompson Sampling adaptively optimize recommendations, ensuring they align with evolving user preferences.
